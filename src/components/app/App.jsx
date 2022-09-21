@@ -35,20 +35,11 @@ export class App extends Component {
     }
   }
 
-  // formSubmitHandler = data => {
-  //   console.log(data);
-  // }
-
-
-  reset = () => {
-    this.setState({name: '', number: ''})
-  };
-  
+ 
   handleInputChange = (e) => {
     this.setState(
         {[e.currentTarget.name]: e.currentTarget.value}
-      );
-
+    );
   }
 
 
@@ -125,4 +116,3 @@ export class App extends Component {
     );
   };
 }
-
